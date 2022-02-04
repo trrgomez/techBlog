@@ -1,0 +1,17 @@
+{{#if posts.length}}
+<section class="w-50 mx-auto my-3">
+  <h2>Your Posts</h2>
+    {{#each posts as |post|}}
+      {{> dashboard-postinfo post}}
+    {{/each}}
+
+
+</section>
+{{/if}}
+
+<section class="w-50 mx-auto mt-3">
+  <button type="submit" class="btn mt-4"><a class="link" href="/dashboard/new">+ New Post</a></button>
+</section>
+
+
+<script src="/javascript/add-post.js"></script>
